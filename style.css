@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  height: 40px;
+  width: 40px;
+}
+
+#input-task {
+  height: 40px;
+  width: 400px;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta;
+}
+
+#add-task-button {
+  background-color: darkblue;
+  color: cyan;
+  height: 40px;
+  width: 200px;
+}
+
+.delete-btn {
+  background-color: crimson;
+  border-radius: 50%;
+  color: white;
+  height: 40px;
+  width: 40px;
+}
