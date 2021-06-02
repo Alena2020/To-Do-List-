@@ -17,19 +17,26 @@
     <li>
         <input type="checkbox">
         <span class="task">E-mail David</span>
-        <button class="delete-btn">x</button>
+        <button class="delete-btn" onclick="return this.parentNode.remove();">x</button>
     </li>
     <li>
         <input type="checkbox">
         <span class="task">Create ideal user persona guide</span>
-        <button class="delete-btn">x</button>
+        <button class="delete-btn" onclick="return this.parentNode.remove();">x</button>
     </li>
     <li>
         <input type="checkbox">
         <span class="task">Set up A/B test</span>
-        <button class="delete-btn">x</button>
+        <button class="delete-btn" onclick="return this.parentNode.remove();">x</button>
     </li>
 </ul>
 
+<div>
+    <button class="button-theme" onClick="toggleTheme('light')">Light Mode</button>
+    <button class="button-theme" onClick="toggleTheme('dark')">Dark Mode</button>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
