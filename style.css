@@ -23,6 +23,13 @@ body.dark {
   color: #fff;
 }
 
+/* If checkbox is checked the task name should be crossed out.*/
+#task-list input:checked ~ .task {
+  text-decoration: line-through;
+  text-decoration-color: crimson;
+  text-decoration-style: double;
+}
+
 li {
   list-style: none;
 }
