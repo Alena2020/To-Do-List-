@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>To-Do List</h1>
-<div>
-    <input type="text" id="input-task">
-    <button id="add-task-button">Add task</button>
-</div>
+<body>  
+    <h1>To-Do List</h1>
+<form>
+    <input type="text" id="input-task"  placeholder="Add a new task..." keypress.enter="addTask">
+    <button id="add-task-button" >Add task</button>
+</form>
 <ul id="task-list">
     <li>
         <input type="checkbox">
@@ -29,13 +29,14 @@
         <span class="task">Set up A/B test</span>
         <button class="delete-btn" onclick="return this.parentNode.remove();">x</button>
     </li>
+
 </ul>
 
 <div>
     <button class="button-theme" onClick="toggleTheme('light')">Light Mode</button>
     <button class="button-theme" onClick="toggleTheme('dark')">Dark Mode</button>
+    <button class="clear" onClick="clearAll()">Clear All</button>
 </div>
-
 
 <script src="script.js"></script>
 </body>

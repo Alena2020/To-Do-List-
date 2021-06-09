@@ -28,10 +28,24 @@ body.dark {
   text-decoration: line-through;
   text-decoration-color: crimson;
   text-decoration-style: double;
+  transition: 1.1s;
 }
 
 li {
   list-style: none;
+  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+  box-shadow: 5px 5px 15px aqua, 0 0 20px magenta,
+    inset 15px 15px 15px midnightblue, inset -15px -15px 15px midnightblue;
+  border-radius: 15px;
+  color: lime;
+  transition: 2.1s;
 }
 
 button {
@@ -49,12 +63,27 @@ h1,
 span {
   box-shadow: 5px 5px 15px aqua, 0 0 20px magenta, inset 5px 5px 15px aqua;
   border-radius: 15px;
+  cursor: pointer;
 }
 
-h1,
+h1 {
+  padding: 10px 165px;
+  margin: 20px;
+}
+
+h1:hover {
+  background-color: cyan;
+  color: mediumblue;
+  text-shadow: 0 0 2px white, -1px -1px 0 white, -3px -3px 1px white,
+    -2px -2px 2px magenta;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  transition: 2.5s;
+}
+
 span {
   padding: 5px;
-  margin: 25px;
+  margin: 5px 25px;
+  flex-grow: 1;
 }
 
 input[type="checkbox"] {
@@ -64,12 +93,28 @@ input[type="checkbox"] {
 
 #input-task {
   height: 40px;
-  width: 400px;
+  width: 470px;
+  font-size: 20px;
+  padding: 5px 50px;
+}
+
+#input-task:hover {
+  color: violet;
+  transition: 0.5s;
 }
 
 #add-task-button,
 .button-theme {
-  margin: 40px;
+  margin: 5px;
+}
+
+#add-task-button:hover,
+.button-theme:hover,
+.clear:hover {
+  border: 7px solid midnightblue;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  transition: 2.5s;
+  transform: translateY(-5px);
 }
 
 .delete-btn {
