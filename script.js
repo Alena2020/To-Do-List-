@@ -40,6 +40,18 @@ function  taskOnTheScreen(){
     });
 }
 
+
+//Clear All
+
+function clearAll() {
+        localStorage.clear();
+        while (listTask.firstChild) {         
+            listTask.removeChild(listTask.firstChild);
+        }    
+}
+
+
+
 //toggle theme 
 function toggleTheme(theme) {
     const body = document.body;
