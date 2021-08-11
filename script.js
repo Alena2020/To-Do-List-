@@ -79,6 +79,7 @@ function clearAll() {
     while (listTask.firstChild) {
         listTask.removeChild(listTask.firstChild);
     }
+    toDoList = [];    
 }
 
 function toggleTheme(theme) {
